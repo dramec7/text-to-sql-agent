@@ -5,6 +5,8 @@ import dev.langchain4j.model.openai.OpenAiChatModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.time.Duration;
+
 
 /**
  * @author holin
@@ -19,6 +21,7 @@ public class ModelConfig {
                 .baseUrl("https://api.deepseek.com")
                 .apiKey("sk-2c190100645d4ad3b2c635f7a81854ac")
                 .modelName("deepseek-chat")
+                .timeout(Duration.ofSeconds(3600))
                 .logRequests(true)
                 .logResponses(true)
                 .build();

@@ -1,4 +1,4 @@
-package com.holin.service;
+package com.holin.config;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
@@ -8,7 +8,6 @@ import dev.langchain4j.service.spring.AiService;
  * @author holin
  * @date 2025/12/22
  */
-@AiService
 public interface Agent {
 
     @SystemMessage("""
