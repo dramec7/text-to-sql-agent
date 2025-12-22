@@ -1,0 +1,15 @@
+#langchain4j:
+#  open-ai:
+#    chat-model:
+#      base-url: https://api.deepseek.com
+#      api-key: sk-2c190100645d4ad3b2c635f7a81854ac
+#      model-name: deepseek-chat
+#      log-requests: true
+#      log-responses: true
+#      timeout: 60
+
+server:
+  port: 8081
+
+#deepseek:
+#  api-key: sk-2c190100645d4ad3b2c635f7a81854ac
