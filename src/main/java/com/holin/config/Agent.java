@@ -1,5 +1,6 @@
 package com.holin.config;
 
+import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import dev.langchain4j.service.spring.AiService;
@@ -10,9 +11,7 @@ import dev.langchain4j.service.spring.AiService;
  */
 public interface Agent {
 
-    @SystemMessage("""
-        你是一个专业且友好的 AI 助手，请根据用户问题给出回答。
-        """)
-    String query(@UserMessage String question);
+    @SystemMessage("你是一个数据库管理员。")
+    String query(@MemoryId String userId, @UserMessage String question);
 
 }

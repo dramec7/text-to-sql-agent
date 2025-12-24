@@ -11,5 +11,15 @@
 server:
   port: 8081
 
-#deepseek:
-#  api-key: sk-2c190100645d4ad3b2c635f7a81854ac
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/text_to_sql?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&remarks=true&useInformationSchema=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# MyBatis Plus 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 开启下划线转驼峰 (session_id -> sessionId)
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 在控制台打印 SQL 语句，方便调试

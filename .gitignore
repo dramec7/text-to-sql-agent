@@ -36,3 +36,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Milvus ###
+standalone_embed.sh
+embedEtcd.yaml
+user.yaml
+volumes/

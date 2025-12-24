@@ -14,7 +14,7 @@ public class ChatService {
     @Autowired
     private Agent agent;
 
-    public String query(String question) {
-        return agent.query(question);
+    public String query(String userId, String question) {
+        return agent.query(userId, question);
     }
 }

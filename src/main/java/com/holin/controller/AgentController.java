@@ -16,7 +16,7 @@ public class AgentController {
     private ChatService chatService;
 
     @PostMapping("/query")
-    public String query(@RequestBody String query){
-        return chatService.query(query);
+    public String query(@RequestParam String userId, @RequestBody String query){
+        return chatService.query(userId, query);
     }
 }
