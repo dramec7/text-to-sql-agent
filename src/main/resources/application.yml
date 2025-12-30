@@ -22,6 +22,9 @@ spring:
       host: localhost
       port: 6379
       database: 0
+  threads:
+    virtual:
+      enabled: true  # 开启虚拟线程支持
 
 # MyBatis Plus 配置
 mybatis-plus:
