@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author holin
- * @date 2025/12/19
  */
 @SpringBootApplication
 public class AgentApplication {

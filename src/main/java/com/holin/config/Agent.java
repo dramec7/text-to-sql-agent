@@ -7,7 +7,6 @@ import dev.langchain4j.service.spring.AiService;
 
 /**
  * @author holin
- * @date 2025/12/22
  */
 public interface Agent {
 

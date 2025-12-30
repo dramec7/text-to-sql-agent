@@ -4,13 +4,11 @@ import com.holin.store.PersistentChatMemoryStore;
 import dev.langchain4j.community.store.ememory.chat.redis.RedisChatMemoryStore;
 import dev.langchain4j.memory.chat.ChatMemoryProvider;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
-import dev.langchain4j.store.memory.chat.ChatMemoryStore;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * @author holin
- * @date 2025/12/22
  */
 @Configuration
 public class MemoryConfig {
@@ -31,4 +29,5 @@ public class MemoryConfig {
                 .chatMemoryStore(persistentChatMemoryStore)
                 .build();
     }
+
 }

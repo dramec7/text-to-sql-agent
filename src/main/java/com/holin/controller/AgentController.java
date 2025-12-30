@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @author holin
- * @date 2025/12/21
  */
 @RestController
 @RequestMapping("/chat")

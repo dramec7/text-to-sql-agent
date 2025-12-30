@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author holin
- * @date 2025/12/23
  */
 @Configuration
 public class RagConfig {
@@ -48,4 +47,5 @@ public class RagConfig {
                 .minScore(0.6)   // 相似度低于 0.6 的不要
                 .build();
     }
+
 }

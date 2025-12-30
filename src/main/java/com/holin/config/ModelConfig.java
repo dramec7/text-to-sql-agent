@@ -10,11 +10,9 @@ import java.time.Duration;
 
 /**
  * @author holin
- * @date 2025/12/22
  */
 @Configuration
 public class ModelConfig {
-
     @Bean
     public ChatModel DeepseekModel() {
         return OpenAiChatModel.builder()
