@@ -17,7 +17,7 @@ public class ModelConfig {
     public ChatModel DeepseekModel() {
         return OpenAiChatModel.builder()
                 .baseUrl("https://api.deepseek.com")
-                .apiKey("sk-2c190100645d4ad3b2c635f7a81854ac")
+                .apiKey("your-api-key")
                 .modelName("deepseek-chat")
                 .timeout(Duration.ofSeconds(3600))
                 .logRequests(true)
