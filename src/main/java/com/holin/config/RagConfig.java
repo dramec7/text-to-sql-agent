@@ -20,7 +20,7 @@ public class RagConfig {
     public EmbeddingModel embeddingModel() {
         return OpenAiEmbeddingModel.builder()
                 .baseUrl("https://dashscope.aliyuncs.com/compatible-mode/v1")
-                .apiKey("sk-2e0ce96094c94595ac089fa7befab770")
+                .apiKey("your-api-key")
                 .modelName("text-embedding-v4")
                 .logRequests(true)
                 .logResponses(true)
